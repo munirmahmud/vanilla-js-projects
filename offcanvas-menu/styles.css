@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    transition: all 0.5s ease-in-out;
+}
+
+.show .container {
+    width: 800px;
+    background-color: rgba(98, 20, 245, 0.233);
+    height: 100%;
+    position: relative;
+}
+
+.navigation {
+    background-color: black;
+    width: 220px;
+    padding: 20px;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    position: absolute;
+    left: -220px;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    cursor: pointer;
+}
+.show .navigation {
+    left: 0;
+}
+.nav-items {
+    list-style: none;
+    padding: 0;
+}
+.nav-items li a {
+    text-decoration: none;
+    color: white;
+}
+.menu {
+    position: relative;
+}
